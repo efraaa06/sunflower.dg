@@ -1,0 +1,19 @@
+---
+const platform = "youtube";
+const username = "Lonrot";
+import Social from './Social.astro';
+---
+<style>
+    footer {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+
+<footer>
+  <p>¡Más información sobre mis proyectos en <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+  <Social platform="github" username="efraaa06" />
+  <Social platform="instagram" username="soy_yiin" />
+  <Social platform="youtube" username="linkin park" />
+</footer>
